@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+  border: 3px solid red;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 30s linear;*/
+  height: 40px;
+  display: inline-block;
+}
+
+.App-header {
+  position: fixed;
+  background-color: #222;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.App-header-text {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.Board-app {
+  margin-top: 0px;
+}
+
+
+/*
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+*/

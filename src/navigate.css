@@ -1,0 +1,19 @@
+.Navigate {
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+li {
+  color: white;
+  list-style: none;
+  display: inline-block;
+  margin-left: 3%;
+}
+
+.login {
+  border-left: 2px solid white;
+  padding-left: 3%;
+}
