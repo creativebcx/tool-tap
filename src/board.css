@@ -1,5 +1,11 @@
-.Board-text {
- margin-top: 15%;
+.Board {
+ margin-top: 5%;
  width: 100%;
  border: 1px solid black;
+}
+
+.image {
+  width: 15%;
+  height: auto;
+  border: 1px solid red;
 }

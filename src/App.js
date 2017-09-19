@@ -3,6 +3,7 @@ import logo from './logo.png';
 import './App.css';
 import Board from './board.js';
 import Navigate from './navigate.js';
+import SearchForm from './searchform.js';
 
 class App extends Component {
   render() {
@@ -13,6 +14,9 @@ class App extends Component {
           <h2 className="App-header-text">Welcome to ToolTap</h2>
           <Navigate />
         </nav>
+        <div className="Search-form">
+          <SearchForm />
+        </div>
         <div className="Board-app">
           <Board />
         </div>

@@ -1,0 +1,35 @@
+.form {
+  color: black;
+  margin-top: 80px;
+}
+
+button {
+  margin-left: 2%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+select {
+  height: 30px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.projectType-select {
+  margin-left: 1%;
+}
+
+.toolType {
+  margin-left: 2%;
+}
+
+.toolType-select {
+  margin-left: 1%;
+}
