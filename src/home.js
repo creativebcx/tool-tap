@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
-import './App.css';
+import './home.css';
 import Board from './board.js';
 import Navigate from './navigate.js';
 import SearchForm from './searchform.js';
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div className="App">
@@ -24,5 +24,5 @@ class App extends Component {
     );
   }
 }
-export default App;
+export default Home;
 

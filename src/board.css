@@ -1,11 +1,39 @@
 .Board {
- margin-top: 5%;
- width: 100%;
+ margin-top: 3%;
+ margin-left: 10%;
+ width: 80%;
  border: 1px solid black;
 }
 
-.image {
-  width: 15%;
+.tool-image {
+  width: 10%;
   height: auto;
   border: 1px solid red;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.tool-name {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.tool-quality {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.tool-price {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.tool-description {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.tool-button {
+  display: inline-block;
+  margin-right: 2%;
 }

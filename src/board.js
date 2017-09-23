@@ -5,16 +5,20 @@ import testimg from './testimg.jpg';
 export default class Board extends React.Component {
   constructor(props) {
     super(props);
-    const name = "Electric Hand Saw";
+    this.state = {
+      
+    };
   };
 
   render() {
     return (
       <div className="Board">
-        <div className="Board-text">Test
-          <img className="image" src={testimg} alt="tool-thumbnail" />
-          <div className="tool-name" value={this.props.name}>Tool Name:{this.props.name}</div>
-        </div>
+        <img className="tool-image" src={testimg} alt="tool-thumbnail" />
+        <div className="tool-name">Test Name</div>
+        <div className="tool-quality">Test Fair</div>
+        <div className="tool-price">Test $25/day</div>
+        <div className="tool-description">Test Lorum Ipsum Verde Talle</div>
+        <button className="tool-button">Contact Owner</button>
       </div>
     );
   }

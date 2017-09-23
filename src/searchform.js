@@ -13,6 +13,9 @@ export default class SearchForm extends React.Component {
         'Electric Saws',
         'Yard Machinary',
         'Diesel Tools'
+      ],
+      location: [
+        'Boise, ID'
       ]
     };
 
@@ -26,6 +29,12 @@ export default class SearchForm extends React.Component {
   render() {
     return (
       <form className="form" onSubmit={this.handleSubmit}>
+        <label className="location">
+          Location:
+          <select className="projectType-select">
+              <option>{this.state.location[0]}</option>
+          </select>
+        </label>
         <label className="projectType">
           Project Type:
           <select className="projectType-select">
@@ -47,42 +56,3 @@ export default class SearchForm extends React.Component {
     );
   }
 }
-
-/*
-export default class SearchForm extends React.Component {
-  constructor(props) {
-  super(props);
-  
-    const projectType = [
-      "Carpentry", 
-      "Automotive",
-      "Plumbing",
-      "Landscaping",
-      "Masonry",
-      "Metalwork/Fabrication" 
-    ]
-
-    const toolCatagory = [
-      "Drills",
-      "Electric Saws",
-      "Yard Machinary"
-    ]
-  }
-
-  render() {
-    return (
-      <div className="SearchForm">
-        <form>
-          <label>
-            Project Type:
-            <select name="projectType">
-              <option></option>
-            </select>
-          </label>
-        </form>
-      </div>
-    );
-  }
-}
-
-*/
