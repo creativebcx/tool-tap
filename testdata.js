@@ -29,6 +29,7 @@ const demoTools = {
     'toolOwner': '1234',
     'toolAvailable': true
   },
+
   'T4321': {
     'toolName': 'Finishing Sander',
     'toolQuality': 'Excellent',
@@ -42,6 +43,7 @@ const demoTools = {
     'toolOwner': '1234',
     'toolAvailable': true
   },
+  
   'T1111': {
     'toolName': 'Car Jack',
     'toolQuality': 'Good',

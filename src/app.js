@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.png';
-import './home.css';
+import './app.css';
 import Board from './board.js';
 import Navigate from './navigate.js';
 import SearchForm from './searchform.js';
+import registerServiceWorker from './registerServiceWorker';
 
-class Home extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -24,5 +26,5 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+
 
