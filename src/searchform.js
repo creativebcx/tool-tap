@@ -5,21 +5,22 @@ export default class SearchForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {projectType: [
+      'Select Project Type',
+      'Carpentry',
+      'Concrete',
+      'Welding',
       'Plumbing',
       'Auto',
       'Landscaping'
       ],
-      toolType: [
-        'Electric Saws',
-        'Yard Machinary',
-        'Diesel Tools'
-      ],
       location: [
-        'Boise, ID'
+        'Select Location',
+        'Boise, ID',
+        'Salt Lake City, UT'
       ]
     };
-
-    this.handleChange = this.handleChange.bind(this);
+  
+  this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
@@ -27,28 +28,20 @@ export default class SearchForm extends React.Component {
   }
 
   render() {
-    return (
+    return ( 
       <form className="form" onSubmit={this.handleSubmit}>
         <label className="location">
           Location:
-          <select className="projectType-select">
-              <option>{this.state.location[0]}</option>
+          <select className="location-select">
+            {this.state.location.map(
+              location => <option key={location.id}>{location}</option>)}
           </select>
         </label>
         <label className="projectType">
           Project Type:
           <select className="projectType-select">
-              <option>{this.state.projectType[0]}</option>
-              <option>{this.state.projectType[1]}</option>
-              <option>{this.state.projectType[2]}</option>
-          </select>
-        </label>
-        <label className="toolType">
-          Tool Type:
-          <select className="toolType-select">
-              <option>{this.state.toolType[0]}</option>
-              <option>{this.state.toolType[1]}</option>
-              <option>{this.state.toolType[2]}</option>
+            {this.state.projectType.map(
+              projectType => <option key={projectType.id}>{projectType}</option>)}
           </select>
         </label>
         <button type="submit" value="Search">Search</button>
@@ -56,3 +49,8 @@ export default class SearchForm extends React.Component {
     );
   }
 }
+
+//tools = this.state.toolTypes.filter(item => item.projectType = this.state.projectType)
+
+//[{'projectType': 'carpentry', 'toolType': 'hammer'}
+//{'projectType': 'carpentry', 'toolType': 'drill'}

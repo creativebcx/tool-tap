@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './tool.css';
 import testimg from './testimg.jpg';
+//import {demoTools} from './testdata.js';
 
-export default class Tool extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  };
-
-  render() {
+export default function Tool(props) {
     return (
-      <div className="Tool">
-        <img className="tool-image" src={testimg} alt="tool-thumbnail" />
-        <div className="tool-name">Test Name</div>
-        <div className="tool-quality">Test Fair</div>
-        <div className="tool-price">Test $25/day</div>
-        <div className="tool-description">Test Lorum Ipsum Verde Talle</div>
-        <button className="tool-button">Rent It!</button>
-      </div>
+        <div className="tool">
+          <img className="toolImageUrl" src={testimg} alt="tool-thumbnail" />
+          <div className='toolName'>{props.toolName}</div>
+          <div className='toolQuality'>{props.toolQuality}</div>
+          <div className='toolPrice'>{props.toolPrice}</div>
+          <div className='toolPriceUnit'>{props.toolPriceUnit}</div>
+          <div className='toolDescription'>{props.toolDescription}</div>
+        </div>
     );
-  }
-}
+};
+
+Tool.defaultProps = {
+    toolName: '',
+    toolQuality: '',
+    toolPrice: '',
+    toolPriceUnit: '',
+    toolDescription: '',
+    toolImgUrl: '',    
+};

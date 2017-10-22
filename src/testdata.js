@@ -1,6 +1,4 @@
-import React from 'react';
-
-const demousers = {
+export const demousers = {
   'user0': {
     'userId': 1234,
     'userName': 'TestUser1234',
@@ -15,12 +13,12 @@ const demousers = {
   }
 }
 
-const demoTools = {
+export const demoTools = [{
   'T1234': {
     'toolName': 'Skill Saw',
     'toolQuality': 'Fair',
     'toolPrice': '25',
-    'tollPriceUnite': 'day',
+    'toolPriceUnit': 'day',
     'toolDescription': 'Test Lorum Ipsum Verde Talle',
     'toolImgUrl': 'img/testimgskillsaw.jpg',
     'toolLocation': 'Boise',
@@ -57,5 +55,5 @@ const demoTools = {
     'toolOwner': '1234',
     'toolAvailable': true
   }
-}
+}]
 

@@ -1,17 +1,28 @@
 a {
-  color: white;
+  color: #fb8c00;
   text-decoration: none;
 }
 
 a:hover {
-  color: blue;
+  color: #ffbd45;
 }
 
 .Navigate {
   float: right;
   margin: auto;
-  margin-top: 30px;
-  width: 220px;
+  margin-top: 15px;
+  width: 280px;
+}
+
+.Navigate button {
+  color: #fb8c00;
+  background-color: #707070;
+  width: 110px;
+  transition: 0.5s;
+}
+
+.Navigate button:hover {
+  background-color: lightgrey;
 }
 
 li {
